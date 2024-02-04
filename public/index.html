@@ -19,27 +19,54 @@
       </div>
 
       <div class="container__settings">
-        <div class="options">
-          <input type="checkbox" id="lowercase" checked />
-          <label for="lowercase">Буквы нижнего регистра</label>
-          <input type="checkbox" id="uppercase" />
-          <label for="uppercase">Буквы верхнего регистра</label>
-          <input type="checkbox" id="numbers" checked />
-          <label for="numbers">Цифры</label>
-          <input type="checkbox" id="special" />
-          <label for="special">Спецсимволы</label>
-          <div class="slider-container">
-            <input type="range" id="length" min="8" max="128" value="8" />
-            <div class="range-info">
-              <p>Длина пароля:</p>
-              <p id="length-value">8</p>
-            </div>
+        <div class="container__checkboxes">
+          <div class="checkbox">
+            <input type="checkbox" id="lowercase" checked />
+            <label for="lowercase" class="color-box">
+              <p class="checkbox__title">Lowercase letters</p>
+              <p class="checkbox__subtitle">a-z</p>
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" id="uppercase" />
+            <label for="uppercase" class="color-box">
+              <p class="checkbox__title">Uppercase letters</p>
+              <p class="checkbox__subtitle">A-Z</p>
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" id="numbers" checked />
+            <label for="numbers" class="color-box">
+              <p class="checkbox__title">Numbers</p>
+              <p class="checkbox__subtitle">0-9</p>
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" id="special" />
+            <label for="special" class="color-box">
+              <p class="checkbox__title">Special characters</p>
+              <p class="checkbox__subtitle">!@#$%</p>
+            </label>
           </div>
         </div>
+
+        <div class="container__slider">
+          <div class="slider">
+            <div class="slider__info">
+              <p class="slider__title">Password length</p>
+              <p class="slider__subtitle" id="length-value">16</p>
+            </div>
+            <input type="range" id="length" min="16" max="128" value="8" />
+          </div>
+        </div>
+
+        <button id="generate" class="generate-button">
+          Сгенерировать пароль
+        </button>
       </div>
-      <button id="generate" class="generate-button">
-        Сгенерировать пароль
-      </button>
 
       <script src="/src/js/script.js"></script>
     </div>
