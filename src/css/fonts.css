@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'PetrovSans-Trial-Regular';
+    src: url('../assets//fonts/PetrovSans-Trial-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'PetrovSans-Trial-SemiBold';
+    src: url('../assets/fonts/PetrovSans-Trial-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }

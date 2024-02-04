@@ -1,0 +1,207 @@
+@import "colors.css";
+@import "fonts.css";
+
+/* Сброс стиле   */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overflow-x: hidden; */
+  font-family: PetrovSans-Trial-SemiBold, sans-serif;
+  background-color: var(--Background-main);
+}
+
+.container {
+  height: 100%;
+  width: 768px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+}
+
+header {
+  padding: 10px;
+  border-radius: 0 0 80px 80px;
+  background: var(--Violet);
+}
+.header_title {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 60px;
+  text-transform: uppercase;
+  color: var(--White);
+}
+
+
+.container__password {
+  /* margin-top: 30px; */
+  height: 127px;
+  margin: 0 10px;
+  background: var(--Dark);
+  border-radius: 30px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* gap: 12px; */
+}
+
+
+
+#password {
+  color: var(--White);
+  font-size: 16px;
+  font-family: PetrovSans-Trial-Regular, sans-serif;
+  word-wrap: break-word;
+}
+
+#copy-button {
+  background-color: var(--Violet);
+  font-family: PetrovSans-Trial-SemiBold, sans-serif;
+  font-size: 16px;
+  width: 164px;
+  height: 39px;
+  padding: 8px 16px;
+  color: var(--White);
+  align-self: flex-end;
+  border-radius: 30px;
+}
+
+#copy-button:hover {
+  background-color: var(--Green);
+  color: var(--Dark);
+}
+
+
+
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+
+.container__settings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 16px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  margin-right: 16px;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+
+.range-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="checkbox"] {
+  margin-bottom: 4px;
+}
+
+
+
+

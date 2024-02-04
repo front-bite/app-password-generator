@@ -1,0 +1,9 @@
+/* Палитра цветов */
+:root {
+  --Background-main: #e8e8e8;
+  --White: #ffffff;
+  --Dark: #1e1e1e;
+  --Green: #79ff87;
+  --Orange: #e7824b;
+  --Violet: #6448e8;
+}
